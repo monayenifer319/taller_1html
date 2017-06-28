@@ -1,0 +1,21 @@
+.color{
+    background: #FE9A2E;
+}
+.navbar, .footer, .header{
+     background: #FF4000;
+     margin-bottom: 0px;
+}
+.carousel-caption{
+    color: white;
+    font-size: 40px;
+}
+#text_company{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.foto_cata{
+    padding-bottom: 40px;
+}
+#imgollas{
+    width: 100%;
+}

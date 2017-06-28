@@ -1,0 +1,242 @@
+body{
+    background: #FE9A2E;
+}
+.header, footer{
+    display: flex;
+    background: #FF4000;
+    padding: 40px;
+}
+.menu li{
+    padding: 20px;
+    display: inline;
+    list-style-type: none;
+}
+.menu li:hover{
+    background-color: #FA8258;
+    padding: 20px;
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+}
+p, h1{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.logo_header{
+    height: 100px
+}
+.principal{
+    width: 100%;
+    height: 700px;
+}
+.footer{
+    height: 280px;
+}
+/*pagina de catalogos */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    /*align-items: center;*/
+    background: white;
+    flex-basis: 25%;
+    margin: 1em;
+    border-radius: 20px;
+    text-align: center;
+}
+h3{
+    background: #FE9A2E;
+    border-radius: 5px;
+    padding: 15px;
+    width: 80px;
+    color: white;
+    margin-left: 80px;
+}
+/*pagina de nuestra compañia*/
+h4{
+    background: white;
+    font-size: 40px;
+    /*padding-left: 40px;*/
+    color: #A4A4A4;
+}
+.company{
+    background: white;
+    display: flex;
+    text-align: center;
+    padding: 60px;
+}
+#text{
+    color: #A4A4A4;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 110px;
+}
+.ubicacion{
+    padding-top: 30px;
+    height: 200px;
+}
+.caracteristicas{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 30px;
+}
+.menu{
+    margin-left: 100vw;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+    margin-bottom: -10px;
+}
+.labelToggle{
+    color: white;
+    font-size: 25px;
+    padding-left: 110px;
+}
+#toggle:checked ~ .menu{
+    transition: all .5s;
+    display: block;
+    margin-left: 0;
+    height: auto;
+    overflow: visible;
+}
+.catalogo_caracte{
+    width: 100%;
+}
+.ollap{
+    height: 300px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+@media screen and (min-width: 1074px){
+    .labelToggle{
+        display: none;
+    }
+    .menu{
+        margin: 0;
+        display: flex;
+        height: auto;
+    }
+    .menu > li{
+        margin: .5em;
+        text-align: center;
+    }
+    .menu > li > a {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media(max-width:690px){
+    .header, footer, .company, .container, .caracteristicas{
+
+        flex-direction: column;
+    }
+    /*padding: 20px;*/
+    .logo_header{
+        width: 250px;
+    }
+    .principal{
+        height: 350px;
+    }
+    .footer{
+        height: 470px;
+    }
+    a, p{
+        padding: 5px;
+        flex-direction: column;
+    }
+    .ollap{
+        padding-left: 50px;
+    }
+}
+@media(max-width:550px){
+    .menu >li {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo_footer{
+        width: 260px;
+        height: 165px;
+    }
+    .container{
+
+        align-items: center;
+    }
+    .fotocompa{
+        width: 15em;
+    }
+    .company, .caracteristicas{
+        flex-direction: column;
+        /*text-align: center;*/
+    }
+    .company > #text{
+        text-align: left;
+    }
+    .caracteristicas{
+        font-size: 20px;
+    }
+    .catalogo_caracte{
+        width: 100%;
+        height: 170px;
+    }
+    .ollap{
+    height: 200px;
+/*    #text{
+    padding-left: 0px;
+    padding-top: 0px;
+    }*/
+}
+@media screen and (min-width: 691px){
+    .labelToggle{
+        margin-left: 30%;
+        align-self: center;
+        font-size: 30px;
+        flex-direction: column;
+    }
+    .principal{
+        height: 390px;
+    }
+    #text{
+    padding-left: 0px;
+    padding-top: 0px;
+    }
+}
+@media(min-width:551px) and (max-width:900px){
+    .principal{
+        height: 380px;
+    }
+    .container{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .company{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu >li {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .header, footer, .company, .container, .caracteristicas{
+            flex-direction: column;
+        text-align: center;
+    }
+    .item{
+        flex-basis: 45%;
+    }
+/*    #text{
+    padding-left: 20px;
+    padding-top: 70px;
+    }*/
+}
