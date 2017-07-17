@@ -1,3 +1,6 @@
+.white{
+    background: white;
+}
 body{
     background: #FE9A2E;
 }
@@ -27,7 +30,7 @@ p, h1{
     padding: 10px;
 }
 .logo_header{
-    height: 100px
+    height: 100px;
 }
 .principal{
     width: 100%;
@@ -35,9 +38,8 @@ p, h1{
 }
 .footer{
     height: 280px;
+    display: flex;
 }
-/*pagina de catalogos */
-
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +65,6 @@ h3{
 h4{
     background: white;
     font-size: 40px;
-    /*padding-left: 40px;*/
     color: #A4A4A4;
 }
 .company{
@@ -78,11 +79,7 @@ h4{
     padding-left: 10px;
     padding-top: 110px;
 }
-.ubicacion{
-    padding-top: 30px;
-    height: 200px;
-}
-.caracteristicas{
+.characteristics{
     display: flex;
     color: white;
     flex-wrap: wrap;
@@ -108,14 +105,38 @@ h4{
     height: auto;
     overflow: visible;
 }
-.catalogo_caracte{
+.catalogue_characte{
     width: 100%;
 }
-.ollap{
+.product{
     height: 300px;
     padding-top: 40px;
     padding-bottom: 30px;
     border-radius: 20px;
+}
+.form{
+    /*background: #F6E3CE;*/
+    text-align: center;
+    width: 500px;
+     margin: 0 auto;
+     margin-bottom: 30px;
+
+}
+.form > div > input{
+    width: 400px;
+    height: 40px;
+}
+.form > div > label{
+    font-size: 30px;
+}
+.button{
+    width: 6em !important;
+    background: #FE9A2E;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
 }
 @media screen and (min-width: 1074px){
     .labelToggle{
@@ -134,10 +155,10 @@ h4{
         padding: 0;
         margin: 0;
     }
+    
 }
 @media(max-width:690px){
-    .header, footer, .company, .container, .caracteristicas{
-
+    .header, .footer, .company, .container{
         flex-direction: column;
     }
     /*padding: 20px;*/
@@ -157,6 +178,17 @@ h4{
     .ollap{
         padding-left: 50px;
     }
+    .form > div > input{
+        width: 300px;
+        height: 30px;
+    }
+    .form{
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }
 }
 @media(max-width:550px){
     .menu >li {
@@ -171,17 +203,17 @@ h4{
 
         align-items: center;
     }
-    .fotocompa{
+    .Photocompa{
         width: 15em;
     }
-    .company, .caracteristicas{
+    .company, .characteristics{
         flex-direction: column;
         /*text-align: center;*/
     }
     .company > #text{
         text-align: left;
     }
-    .caracteristicas{
+    .characteristics{
         font-size: 20px;
     }
     .catalogo_caracte{
@@ -190,10 +222,6 @@ h4{
     }
     .ollap{
     height: 200px;
-/*    #text{
-    padding-left: 0px;
-    padding-top: 0px;
-    }*/
 }
 @media screen and (min-width: 691px){
     .labelToggle{
@@ -228,15 +256,11 @@ h4{
         padding: 0;
         margin: 0;
     }
-    .header, footer, .company, .container, .caracteristicas{
+    .header, footer, .company, .container, .characteristics{
             flex-direction: column;
         text-align: center;
     }
     .item{
         flex-basis: 45%;
     }
-/*    #text{
-    padding-left: 20px;
-    padding-top: 70px;
-    }*/
 }

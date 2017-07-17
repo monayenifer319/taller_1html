@@ -4,16 +4,16 @@
     /*box-shadow : inset 0 0 1px;*/
 }
 
-.contenedor > div:last-child {
+.container > div:last-child {
     margin-bottom: 40px;
 }
 
-.contenedor {
+.container {
     display: flex;
     flex-direction: column;
 }
 
-.titulo {
+.title{
     display: flex;
     border: 4px solid #0404B4 ;
     border-radius: 20px;
@@ -24,7 +24,7 @@
 
 }
 
-.titulo > div {
+.title > div {
     height: 100px;
 
     flex-basis: 90%;
@@ -38,12 +38,11 @@ h2{
     border-top-left-radius: 20px;
     margin-bottom: 0px;
 }
-.unidad{
+.unity{
     border: 2px solid #0080FF;
     border-radius: 15px;
     margin-bottom: 20px;
 }
-
 .line1, .line2, .line3, .line4 > div {
     display: flex;
     flex-direction: row;
@@ -74,11 +73,11 @@ h2{
 }
 
 @media (max-width: 550px) {
-    .titulo {
+    .title {
         padding-right: 0px;
     }
 
-    .titulo > div {
+    .title> div {
         height: 60px;
         flex-basis: 100%;
     }
@@ -98,7 +97,7 @@ h2{
 }
 
 @media (min-width: 1025px) {
-    .contenedor {
+    .container {
         width: 1024px;
         margin: 0 auto 0 auto;
     }

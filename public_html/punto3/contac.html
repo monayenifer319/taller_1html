@@ -2,30 +2,52 @@
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body class="white">
         <header class="header">
-        <div>
-            <img src="imagenes/logo.png" class="logo_header">
-        </div>
-        <input type="checkbox" id="toggle" hidden>
-        <label for="toggle" class="labelToggle">Menu</label>
+            <div>
+                <img src="imagenes/logo.png" class="logo_header">
+            </div>
+            <input type="checkbox" id="toggle" hidden>
+            <label for="toggle" class="labelToggle">Menu</label>
             <ul class="menu">
                 <li><a href="index.html">start</a></li> 
                 <li><a href="catalogue.html">Catalogue</a></li>
                 <li><a href="company.html">Our company</a></li>
                 <li><a href="contac.html">contac</a></li>
             </ul>
-    </header>
-        
+        </header>
+        <section>
+            <form class="form">
+                <div>
+                    <h4>contac</h4>
+                    <label> name</label><br>
+                    <input type="text" name="name" required>
+                    <br><br>
+                    <label> last name</label><br>
+                    <input type="text" name="name" required>
+                    <br><br>
+                    <label> phone:</label><br>
+                    <input type="number" name="number" required>
+                    <br><br>
+                    <label>email:</label><br>
+                    <input type="email" name="email" required>
+                    <br><br>
+                    <label> Menssage:</label><br>
+                    <textarea cols="30" rows="5" placeholder="Enter a message (opctional)"></textarea>
+                    <br>
+                    <input type="submit" value="submit" class="button">	
+                </div>
+            </form>	
+        </section>  
         <footer class="footer">
             <div>
                 <img src="imagenes/logo.png" class="logo_footer">
             </div>
             <div>
-                <p>Imusa es una marca de Groupe Seb </p>
+                <p>Imusa is a brand the Groupe Seb </p>
                 <h1> Línea gratuita del servicio al cliente 018000520022</h1>
                 <p>MUSA 2015 / Términos y condiciones de uso /atencionalcliente@groupeseb.com </p>
             </div>
